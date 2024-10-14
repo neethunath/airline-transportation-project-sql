@@ -22,6 +22,7 @@ The project is organized into six stages:
 
 ### Overview
 The following SQL files contain queries that analyze the database and provide insights based on various criteria:
+- [stage_1_updating_passenger_trip_dates.sql](./stage_1_updating_passenger_trip_dates.sql)
 
 ### Example Queries
 Below are a few key queries to illustrate the type of analysis performed:
