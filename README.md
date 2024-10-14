@@ -26,3 +26,16 @@ The following SQL files contain queries that analyze the database and provide in
 
 ### Example Queries
 Below are a few key queries to illustrate the type of analysis performed:
+
+#### Stage 1: Updating Passenger Trip Dates
+```sql
+ALTER TABLE Pass_in_trip
+MODIFY trip_date DATE;
+
+UPDATE Pass_in_trip
+SET trip_date = CAST(trip_date AS DATE);
+
+SELECT trip_date
+FROM Pass_in_trip;
+```
+The query changes the data type of the trip_date column to DATE.
