@@ -1,5 +1,5 @@
 -- Stage 2: Identify passengers who have flown multiple times with specific airlines.
-Output the passenger_name, num_flights, and company_name.
+-- Output the passenger_name, num_flights, and company_name.
 
 SELECT 
     p.passenger_name, 
