@@ -8,6 +8,15 @@ Below is a visual representation of the database structure used in this project.
 ![Database Structure](database-schema.png)
 
 ## Database Explanation
+We work with several tables, including:
+- **Passenger** – Contains information about passengers like passenger ID (`ID_psg`) and passenger name (`passenger_name`).
+- **Pass_in_trip** – This junction table links passengers to trips. It stores information about which passenger is on which trip and their assigned seat number.
+- **Trip** – This table contains the essential details of each trip, including the flight schedule and the company operating the trip.
+- **Airline_company** – Stores information about different airline companies that operate the trips. Each trip is linked to a specific airline.
+### Relationships
+  - An airline company operates a trip through the ID_comp foreign key.
+  - Each passenger can be associated with multiple trips through the Pass_in_trip table.
+  - The Pass_in_trip table connects the Trip and Passenger tables, recording which passengers are on each trip and their seat assignments.
 
 ## Project Structure
 The project is organized into six stages:
@@ -23,6 +32,11 @@ The project is organized into six stages:
 ### Overview
 The following SQL files contain queries that analyze the database and provide insights based on various criteria:
 - [stage_1_updating_passenger_trip_dates.sql](./stage_1_updating_passenger_trip_dates.sql)
+- [stage_2_identifying_key_passengers.sql](./stage_2_identifying_key_passengers.sql)
+- [stage_3_route_performance_analysis.sql](./stage_3_route_performance_analysis.sql)
+- [stage_4_comparing_flight_duration.sql](./stage_4_comparing_flight_duration.sql)
+- [stage_5_ranking_top_routes.sql](./stage_5_ranking_top_routes.sql)
+- [stage_6_passenger_segmentation.sql](./stage_6_passenger_segmentation.sql)
 
 ### Example Queries
 Below are a few key queries to illustrate the type of analysis performed:
