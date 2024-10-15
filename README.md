@@ -20,12 +20,12 @@ We work with several tables, including:
 
 ## Project Structure
 The project is organized into six stages:
-1. **Stage 1**: Date adjustment and synchronization.
-2. **Stage 2**: Identifying frequent flyers.
-3. **Stage 3**: Analyzing flight routes, flight durations, passengers, and income.
-4. **Stage 4**: Comparing Boeing and Airbus flight durations.
-5. **Stage 5**: Finding the top two routes with the longest durations for each airline company.
-6. **Stage 6**: Segmenting passengers using ABC testing based on their contribution to income.
+**Stage 1**: Date adjustment and synchronization.
+**Stage 2**: Identifying frequent flyers.
+**Stage 3**: Analyzing flight routes, flight durations, passengers, and income.
+**Stage 4**: Comparing Boeing and Airbus flight durations.
+**Stage 5**: Finding the top two routes with the longest durations for each airline company.
+**Stage 6**: Segmenting passengers using ABC testing based on their contribution to income.
 
 ## SQL Queries
 
